@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Bellefair:regular" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/crew.min.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<a href="../../index.html"><img src="../img/shared/logo.svg" alt="logo"></a>
+			</div>
+			<span class="header__line"></span>
+			<ul class="header__list">
+				<li class="header__link"><a class="link-home" href="../../index.html"><b>00</b> Home</a></li>
+				<li class="header__link"><a class="link-destination" href="../html/destination.html"><b>01</b> Destination</a></li>
+				<li class="header__link"><a class="link-crew active" href="#"><b>02</b> Crew</a></li>
+				<li class="header__link"><a class="link-technology" href="./technology.html"><b>03</b> Technology</a></li>
+			</ul>
+			<div class="header__burger">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<section class="crew">
+		<div class="crew__container">
+			<h2 class="crew__title">02 Meet your crew</h2>
+			<article class="team">
+				<div class="team__information">
+					<h2 class="team__information-role">Commander</h2>
+					<h2 class="team__information-name">Douglas Hurley</h2>
+					
+					<p class="team__information-bio">
+						Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+						and former NASA astronaut. He launched into space for the third time as 
+						commander of Crew Dragon Demo-2.
+					</p>
+					<div class="team__information-buttons">
+						<button class="douglas active" aria-label="other person"></button>
+						<button class="mark" aria-label="other person"></button>
+						<button class="victor" aria-label="other person"></button>
+						<button class="anousheh" aria-label="other person"></button>
+					</div>
+				</div>
+				<div class="team__picture"><img src="../img/crew/image-douglas-hurley.png" alt="person picture"></div>
+			</article>
+		</div>
+	</section>
+	<script src="../js/index.js"></script>
+	<script src="../js/crew.js"></script>
+</body>
+</html>

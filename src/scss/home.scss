@@ -1,0 +1,107 @@
+@import "nullstyle.scss";
+@import "template.scss";
+@import "header.scss";
+
+
+body {
+	background: url(../img/home/background-home-desktop.jpg) no-repeat center center fixed;
+	background-size: cover;
+	@media only screen and (max-width: 855px) {
+		background: url(../img/home/background-home-tablet.jpg) no-repeat center center fixed;
+		background-size: cover;
+	}
+	@media only screen and (max-width: 648px) {
+		background: url(../img/home/background-home-mobile.jpg) no-repeat center center;
+		background-size: cover;
+		background-attachment: scroll;
+	}
+} 
+
+//Main
+.travel {
+	min-height: calc(100vh - 13.6rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	@media only screen and (max-width: 648px) {
+		min-height: calc(100vh - 7.2rem);
+		justify-content: start;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 9em;
+		max-width: 111.0em;
+		margin: 12.8em 10.0em;
+		@media only screen and (max-width: 992px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 12.8em 4em;
+		}
+		@media only screen and (max-width: 648px) {
+			margin: 6em 2.4em;
+			gap: 11.9em;
+		}
+	}
+
+	&__content {
+		flex: 0 1 43.0em;
+		@media only screen and (max-width: 992px) {
+			max-width: 51.2em;
+			flex: 1 1 auto;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		@include text-preset2;
+	}
+
+	&__subtitle {
+		@include text-preset1;
+	}
+
+	&__text {
+		@include text-preset3;
+	}
+
+	a{
+		display: block;
+		border-radius: 50%;
+		width: 272px;
+		height: 272px;
+		@media only screen and (max-width: 648px) {
+			width: 144px;
+			height: 144px;
+		}
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: "Bellefair", sans-serif;
+		font-size: 3.2em;
+		font-weight: 400;
+		line-height: 36.7%;
+		letter-spacing: 0px;
+		text-transform: uppercase;
+		color: rgba(11, 13, 23, 1);
+		background-color: #FFFF;
+		width: 272px;
+		height: 272px;
+		border-radius: 50%;
+		transition: all 0.1s linear;
+		&:hover {
+			box-shadow: 0px 0px 0px 80px rgba(255, 255, 255, 0.1);
+			color: rgba(11, 13, 23, 0.5);
+		}
+		@media only screen and (max-width: 648px) {
+			width: 144px;
+			height: 144px;
+			font-size: 1.8em;
+		}
+	}
+}
