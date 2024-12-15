@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution](https://github.com/Fender60/Space-Tourism.git)
+- Live Site URL: [Live site](https://fender60.github.io/Space-Tourism/)
 
 ## My process
 
